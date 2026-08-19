@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Others"
+permalink: /others/
+author_profile: false
+---
+
+{% include base_path %}
+
+<link rel="stylesheet" href="{{ base_path }}/assets/css/others.css">
+
+<style>
+  /* Others 索引页：让卡片网格使用更宽的布局 */
+  .page { float: none !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
+  .page__inner-wrap { padding: 0 !important; }
+  .page__content { padding: 0 !important; }
+</style>
+
+<div class="others-header">
+  <h1>✨ Others</h1>
+  <p>一些有趣的小实验与情感小工具</p>
+</div>
+
+<div class="others-grid">
+  {% for item in site.data.others %}
+  <a class="others-card"
+     {% if item.status != "coming-soon" %}
+     href="{{ base_path }}/others/{{ item.slug }}/"
+     {% else %}
+     href="javascript:void(0)" onclick="return false;"
+     {% endif %}
+  >
+    <div class="others-card__cover" style="background: {{ item.coverGradient }};">
+      <span class="others-card__cover-emoji">{{ item.coverEmoji }}</span>
+      {% if item.status == "coming-soon" %}
+      <span class="others-card__badge">敬请期待</span>
+      {% endif %}
+      <span class="others-card__hint">查看详情 →</span>
+    </div>
+    <div class="others-card__body">
+      <h3 class="others-card__title">{{ item.title }}</h3>
+      <p class="others-card__desc">{{ item.description }}</p>
+      <div class="others-card__tags">
+        {% for tag in item.tags %}
+        <span class="others-card__tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      <span class="others-card__date">{{ item.date }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>

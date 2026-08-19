@@ -1,0 +1,49 @@
+[
+  {
+    "id": "qixi",
+    "title": "💗 七夕 · 心动实验室",
+    "description": "用爱心与星光，为你编织一个浪漫夜晚",
+    "coverGradient": "linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #ff6b6b 100%)",
+    "coverEmoji": "💗",
+    "tags": ["情感", "节日", "互动"],
+    "date": "2026-08-19",
+    "slug": "qixi",
+    "detailComponent": "QixiDetail"
+  },
+  {
+    "id": "starlight",
+    "title": "✨ 星光许愿瓶",
+    "description": "写下你的心愿，让它化作夜空中最亮的星",
+    "coverGradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    "coverEmoji": "✨",
+    "tags": ["互动", "治愈"],
+    "date": "2026-08-19",
+    "slug": "starlight",
+    "detailComponent": "StarlightDetail",
+    "status": "coming-soon"
+  },
+  {
+    "id": "memory",
+    "title": "🌸 时光记忆胶囊",
+    "description": "封存一段回忆，在未来的某天重新打开",
+    "coverGradient": "linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)",
+    "coverEmoji": "🌸",
+    "tags": ["情感", "回忆"],
+    "date": "2026-08-19",
+    "slug": "memory",
+    "detailComponent": "MemoryDetail",
+    "status": "coming-soon"
+  },
+  {
+    "id": "firefly",
+    "title": "🫧 萤火虫之夜",
+    "description": "在静谧的森林中，与萤火虫来一场温柔邂逅",
+    "coverGradient": "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+    "coverEmoji": "🫧",
+    "tags": ["互动", "治愈"],
+    "date": "2026-08-19",
+    "slug": "firefly",
+    "detailComponent": "FireflyDetail",
+    "status": "coming-soon"
+  }
+]

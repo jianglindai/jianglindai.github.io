@@ -1,0 +1,168 @@
+---
+layout: default
+title: "七夕 · 心动实验室"
+permalink: /others/qixi/
+author_profile: false
+---
+
+{% include base_path %}
+
+<link rel="stylesheet" href="{{ base_path }}/assets/css/others.css">
+
+<!-- 覆盖 Jekyll 默认布局约束，让七夕页全屏沉浸 -->
+<style>
+  #main { max-width: 100% !important; margin-top: 0 !important; padding: 0 !important; }
+  .page { float: none !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
+  .page__inner-wrap { padding: 0 !important; }
+  .page__content { padding: 0 !important; }
+  .masthead { display: none !important; }
+  .page__footer { display: none !important; }
+</style>
+
+<!-- 七夕浪漫详情页 -->
+<div class="qixi-page">
+
+  <!-- 返回导航 -->
+  <a href="{{ base_path }}/others/" class="qixi-back">← 返回 Others</a>
+
+  <!-- 星空背景 -->
+  <div class="qixi-stars" id="qixi-stars"></div>
+
+  <!-- 浮动爱心容器 -->
+  <div class="qixi-hearts-container" id="qixi-hearts"></div>
+
+  <!-- 主内容 -->
+  <div class="qixi-content">
+
+    <!-- 脉冲心跳 -->
+    <div class="qixi-pulse-heart">💗</div>
+
+    <h1 class="qixi-title">七夕 · 心动实验室</h1>
+    <p class="qixi-subtitle">用爱心与星光，为你编织一个浪漫夜晚</p>
+
+    <!-- 主视觉 SVG -->
+    <div class="qixi-visual">
+      <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#1a1a2e"/>
+            <stop offset="50%" stop-color="#16213e"/>
+            <stop offset="100%" stop-color="#0f3460"/>
+          </linearGradient>
+          <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fff9c4" stop-opacity="0.8"/>
+            <stop offset="60%" stop-color="#fff9c4" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#fff9c4" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff6b6b"/>
+            <stop offset="100%" stop-color="#c62828"/>
+          </linearGradient>
+        </defs>
+
+        <!-- 夜空背景 -->
+        <rect width="480" height="320" fill="url(#skyGrad)"/>
+
+        <!-- 月亮光晕 -->
+        <circle cx="360" cy="80" r="70" fill="url(#moonGlow)"/>
+        <circle cx="360" cy="80" r="28" fill="#fff9c4" opacity="0.95"/>
+
+        <!-- 星星 -->
+        <g fill="#fff">
+          <circle cx="40" cy="30" r="1.5" opacity="0.8"/>
+          <circle cx="80" cy="60" r="1" opacity="0.6"/>
+          <circle cx="120" cy="25" r="1.5" opacity="0.9"/>
+          <circle cx="200" cy="40" r="1" opacity="0.5"/>
+          <circle cx="260" cy="20" r="2" opacity="0.9"/>
+          <circle cx="300" cy="55" r="1" opacity="0.6"/>
+          <circle cx="420" cy="30" r="1.5" opacity="0.7"/>
+          <circle cx="450" cy="70" r="1" opacity="0.5"/>
+          <circle cx="60" cy="100" r="1" opacity="0.4"/>
+          <circle cx="180" cy="90" r="1.5" opacity="0.7"/>
+          <circle cx="340" cy="130" r="1" opacity="0.5"/>
+          <circle cx="430" cy="120" r="1.5" opacity="0.6"/>
+        </g>
+
+        <!-- 银河带 -->
+        <ellipse cx="240" cy="160" rx="220" ry="30" fill="#7c3aed" opacity="0.08" transform="rotate(-15 240 160)"/>
+        <ellipse cx="240" cy="160" rx="180" ry="20" fill="#e91e63" opacity="0.06" transform="rotate(-15 240 160)"/>
+
+        <!-- 远山剪影 -->
+        <path d="M0,280 Q60,240 120,260 T240,250 T360,265 T480,255 L480,320 L0,320 Z" fill="#0a0a1a" opacity="0.8"/>
+        <path d="M0,300 Q80,270 160,285 T320,280 T480,290 L480,320 L0,320 Z" fill="#000" opacity="0.6"/>
+
+        <!-- 玫瑰花 -->
+        <g transform="translate(150, 200)">
+          <!-- 花茎 -->
+          <path d="M0,0 Q-2,30 -1,60" stroke="#2d6a4f" stroke-width="2.5" fill="none"/>
+          <!-- 叶子 -->
+          <path d="M-1,25 Q-15,20 -18,30 Q-10,35 -1,30" fill="#2d6a4f"/>
+          <path d="M-1,40 Q12,38 15,48 Q8,52 -1,45" fill="#2d6a4f"/>
+          <!-- 花瓣层 -->
+          <circle cx="0" cy="-5" r="22" fill="url(#roseGrad)" opacity="0.9"/>
+          <circle cx="-6" cy="-10" r="16" fill="#ee5a6f" opacity="0.85"/>
+          <circle cx="5" cy="-8" r="14" fill="#ff6b6b" opacity="0.8"/>
+          <circle cx="-2" cy="-12" r="10" fill="#e91e63" opacity="0.9"/>
+          <circle cx="0" cy="-10" r="6" fill="#c62828"/>
+        </g>
+
+        <!-- 飘落的花瓣 -->
+        <g opacity="0.6">
+          <ellipse cx="250" cy="100" rx="4" ry="7" fill="#ff6b6b" transform="rotate(30 250 100)"/>
+          <ellipse cx="300" cy="140" rx="3" ry="6" fill="#ee5a6f" transform="rotate(-20 300 140)"/>
+          <ellipse cx="220" cy="180" rx="4" ry="7" fill="#ff6b6b" transform="rotate(45 220 180)"/>
+          <ellipse cx="350" cy="170" rx="3" ry="5" fill="#e91e63" transform="rotate(-30 350 170)"/>
+          <ellipse cx="280" cy="220" rx="4" ry="6" fill="#ff6b6b" transform="rotate(60 280 220)"/>
+        </g>
+
+        <!-- 两个人影剪影 -->
+        <g fill="#000" opacity="0.7">
+          <!-- 人影 1 -->
+          <circle cx="380" cy="220" r="8"/>
+          <path d="M372,228 Q372,260 370,285 L390,285 Q388,260 388,228 Z"/>
+          <!-- 人影 2 -->
+          <circle cx="405" cy="225" r="7"/>
+          <path d="M398,232 Q398,262 396,285 L414,285 Q412,262 412,232 Z"/>
+        </g>
+
+        <!-- 连接的小爱心 -->
+        <text x="385" y="210" font-size="16" text-anchor="middle">💕</text>
+      </svg>
+    </div>
+
+    <!-- 情感文案（打字机效果） -->
+    <div class="qixi-poem" id="qixi-poem"></div>
+
+    <!-- 互动按钮 -->
+    <div class="qixi-actions">
+      <button class="qixi-btn qixi-btn--primary" id="qixi-wish-btn">💌 许个愿</button>
+      <button class="qixi-btn qixi-btn--secondary" onclick="document.body.click();">💗 点亮心动</button>
+    </div>
+
+    <!-- 心动计数器 -->
+    <div class="qixi-counter">
+      <span>被点亮了</span>
+      <span class="qixi-counter__num" id="qixi-counter-num">0</span>
+      <span>次心动</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- 许愿弹窗 -->
+<div class="qixi-wish-modal" id="qixi-wish-modal">
+  <div class="qixi-wish-box">
+    <div id="qixi-wish-form">
+      <h3>💌 写下你的心愿</h3>
+      <p>在这个浪漫的夜晚，许下一个关于爱的心愿<br>它将化作星光，飘向银河深处</p>
+      <textarea id="qixi-wish-text" placeholder="在这里写下你的心愿..."></textarea>
+      <div class="qixi-wish-actions">
+        <button class="qixi-wish-cancel" id="qixi-wish-cancel">取消</button>
+        <button class="qixi-wish-submit" id="qixi-wish-submit">放飞天灯 ✨</button>
+      </div>
+    </div>
+    <div class="qixi-wish-result" id="qixi-wish-result"></div>
+  </div>
+</div>
+
+<script src="{{ base_path }}/assets/js/qixi.js"></script>
